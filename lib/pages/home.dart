@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
                   const SizedBox(
                     height: 107.0,
                   ),
-                  const ButtonDefault()
+                   ButtonDefault()
                 ],
               ),
             ),

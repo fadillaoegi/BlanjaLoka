@@ -1,29 +1,36 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:flutter/material.dart';
 
-class button {
+class ButtonDefault extends StatelessWidget {
   Color? color;
   String? text;
   double? height;
   double? width;
   VoidCallback? onPress;
-}
-
-class ButtonDefault extends StatelessWidget {
-  const ButtonDefault({
+  ButtonDefault({
     Key? key,
+    this.color,
+    this.height,
+    this.onPress,
+    this.text,
+    this.width,
   }) : super(key: key);
+
+  // ButtonStyle  ({dynamic dynamic, })
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 48,
+      height: height,
       width: 323,
       child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            primary: colorBlanjaloka.primaryColor,
+          ),
           onPressed: () {},
           child: const Text(
             "Masuk",
-            style: TextStyle(color: colorBlanjaloka.blackColor),
+            style: TextStyle(color: Colors.white),
           )),
     );
   }
