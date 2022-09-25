@@ -22,10 +22,10 @@ class ButtonDefault extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
-      width: 323,
+      width: width,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: colorBlanjaloka.primaryColor,
+            primary: color,
           ),
           onPressed: () {},
           child: const Text(
