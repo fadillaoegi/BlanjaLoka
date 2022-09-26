@@ -3,34 +3,39 @@ import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // Primary Color
-final TextStyle textBoldPrimary16 = GoogleFonts.roboto(
+final TextStyle textPrimary600 = GoogleFonts.roboto(
   color: ColorBlanjaloka.primaryColor,
   fontWeight: FontWeight.w600,
-  fontSize: 16,
+);
+final TextStyle textPrimary500 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.primaryColor,
+  fontWeight: FontWeight.w500,
 );
 
+// white Color
+final TextStyle textWhite600 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.backgroundColor,
+  fontWeight: FontWeight.w600,
+);
+
+// Red Color
+final TextStyle textRed500 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.redColor,
+  fontWeight: FontWeight.w500,
+);
 
 // Black Color
-final TextStyle textBoldBlack16 = GoogleFonts.roboto(
+final TextStyle textBlack600 = GoogleFonts.roboto(
   color: ColorBlanjaloka.blackColor,
   fontWeight: FontWeight.w600,
-  fontSize: 16,
 );
 
-final TextStyle textBoldBlack20 = GoogleFonts.roboto(
-  color: ColorBlanjaloka.blackColor,
-  fontWeight: FontWeight.w600,
-  fontSize: 20,
-);
-
-final TextStyle textBoldBlack28 = GoogleFonts.roboto(
-  color: ColorBlanjaloka.blackColor,
-  fontWeight: FontWeight.w600,
-  fontSize: 28,
-);
-
-final TextStyle textBold500Black14 = GoogleFonts.roboto(
+final TextStyle textBlack500 = GoogleFonts.roboto(
   color: ColorBlanjaloka.blackColor,
   fontWeight: FontWeight.w500,
-  fontSize: 14,
+);
+
+final TextStyle textBlack400 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.blackColor,
+  fontWeight: FontWeight.w400,
 );

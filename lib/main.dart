@@ -1,5 +1,5 @@
-import 'package:blanjaloka/pages/home.dart';
-import 'package:blanjaloka/pages/splash.dart';
+
+import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());

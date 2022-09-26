@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:blanjaloka/pages/home.dart';
+
+import 'package:blanjaloka/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {

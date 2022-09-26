@@ -7,4 +7,6 @@ class ColorBlanjaloka {
   static const doneColor = Color(0xff43A047);
   static const disableColor = Color(0xffF0F0F0);
   static const backgroundColor = Color(0xffffffff);
+  static const iconColor = Color(0xff686868);
+  static const dividerColor = Color(0xffAEAEAE);
 }
