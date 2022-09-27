@@ -40,11 +40,8 @@ class RegSuccess extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              Text("Selamat! Akunmu sudah terdaftar.",
-                  style: textBlack400.copyWith(
-                    fontSize: 14.0,
-                  )),
-              Text("Silahkan masuk untuk melanjutkan.",
+              Text(
+                  "Selamat! Akunmu sudah terdaftar.\nSilahkan masuk untuk melanjutkan.",
                   style: textBlack400.copyWith(
                     fontSize: 14.0,
                   )),

@@ -1,3 +1,4 @@
+import 'package:blanjaloka/pages/login_page.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/buttonOutLine.dart';
@@ -33,6 +34,12 @@ class Home extends StatelessWidget {
                     height: 107.0,
                   ),
                   ButtonDefault(
+                    onPress: (() {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return const LoginPage();
+                      }));
+                    }),
                     height: 48.0,
                     width: 323.0,
                     color: ColorBlanjaloka.primaryColor,
@@ -49,10 +56,17 @@ class Home extends StatelessWidget {
                     height: 30.0,
                   ),
                   ButtonOutLine(
+                    onPress: (() {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()),
+                      );
+                    }),
                     height: 48.0,
                     width: 323.0,
                     color: ColorBlanjaloka.backgroundColor,
-                    text: "Masuk",
+                    text: "Daftar",
                     radius: 10.0,
                   ),
                 ],

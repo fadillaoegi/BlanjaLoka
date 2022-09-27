@@ -30,7 +30,7 @@ class ButtonDefault extends StatelessWidget {
               primary: color,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(radius!))),
-          onPressed: () {},
+          onPressed: onPress,
           child: Text(
             text!,
             style: const TextStyle(color: Colors.white),
