@@ -1,5 +1,6 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
+import 'package:blanjaloka/widgets/inputPass.dart';
 import 'package:blanjaloka/widgets/inputText.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +70,11 @@ class _LoginPageState extends State<LoginPage> {
                     style: textBlack500.copyWith(
                       fontSize: 14.0,
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    height: 8.0,
+                  ),
+                  const InputPass()
                 ],
               ),
             )),
