@@ -7,18 +7,26 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
 
+  @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Splash(),
+      // home: const Splash(),
       initialRoute: RouteName.splash,
       routes: {
         // Cara rapi
+        RouteName.splash:(context) => const Splash(),
         RouteName.login: (context) => const LoginPage(),
+        RouteName.register: (context) => const RegisterPage(),
+        RouteName.home: (context) => const Home(),
 
         // Cara manual
         // '/login': (context) => const LoginPage(),

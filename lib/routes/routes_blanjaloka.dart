@@ -1,8 +1,8 @@
 import 'package:blanjaloka/pages/splash_page.dart';
 
 class RouteName {
-  static String root = '/';
-  static const splash = '/splash';
+  // static String root = '/';
+  static String splash = '/splash';
   static const home = '/home';
   static const login = '/login';
   static const register = '/register';
