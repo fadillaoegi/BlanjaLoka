@@ -1,7 +1,9 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
+import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';
 import 'package:blanjaloka/widgets/inputText.dart';
+import 'package:blanjaloka/widgets/textClick.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -16,6 +18,10 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(
+          Icons.arrow_back,
+          color: ColorBlanjaloka.blackColor,
+        ),
         title: Text(
           "Masuk",
           style: textBlack600.copyWith(
@@ -74,7 +80,32 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 8.0,
                   ),
-                  const InputPass()
+                  const InputPass(),
+                  const SizedBox(
+                    height: 6.0,
+                  ),
+                  TextClick(
+                    text: "Lupa Password?",
+                    size: 12.0,
+                  ),
+                  const SizedBox(
+                    height: 28.0,
+                  ),
+                  SizedBox(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ButtonDefault(
+                          height: 48.8,
+                          width: 323.0,
+                          onPress: () {},
+                          text: "Masuk",
+                          color: ColorBlanjaloka.primaryColor,
+                          radius: 10.0,
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             )),

@@ -22,7 +22,7 @@ class _InputPassState extends State<InputPass> {
         hintStyle: textGrey400.copyWith(
           fontSize: 12.0,
         ),
-        errorText: "Cek email atau password anda lagi",
+        // errorText: "Cek email atau password anda lagi",
         errorStyle: textRed500,
         border: const OutlineInputBorder(
           borderSide: BorderSide(

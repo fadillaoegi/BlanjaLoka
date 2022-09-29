@@ -23,8 +23,8 @@ class ButtonDefault extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: height!,
-      width: width!,
+      height: height,
+      width: width,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               primary: color,
@@ -33,7 +33,9 @@ class ButtonDefault extends StatelessWidget {
           onPressed: onPress,
           child: Text(
             text!,
-            style: const TextStyle(color: Colors.white),
+            style: const TextStyle(
+              color: ColorBlanjaloka.backgroundColor,
+            ),
           )),
     );
   }

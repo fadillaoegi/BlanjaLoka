@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 class InputDefault extends StatelessWidget {
   String? hint;
-  
 
   InputDefault({Key? key}) : super(key: key);
 
@@ -20,7 +19,7 @@ class InputDefault extends StatelessWidget {
           hintStyle: textGrey400.copyWith(
             fontSize: 12.0,
           ),
-          errorText: "Cek email atau password anda lagi",
+          // errorText: "Cek email atau password anda lagi",
           errorStyle: textRed500,
           border: const OutlineInputBorder(
               borderSide: BorderSide(

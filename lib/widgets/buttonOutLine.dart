@@ -1,6 +1,7 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ButtonOutLine extends StatelessWidget {
   Color? color;
   String? text;
