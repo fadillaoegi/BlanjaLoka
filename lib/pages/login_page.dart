@@ -1,13 +1,16 @@
+import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';
 import 'package:blanjaloka/widgets/inputText.dart';
+import 'package:blanjaloka/widgets/separator.dart';
 import 'package:blanjaloka/widgets/textClick.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
+  static const login2 = RouteName.home;
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -18,9 +21,12 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(
-          Icons.arrow_back,
-          color: ColorBlanjaloka.blackColor,
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_back,
+            color: ColorBlanjaloka.blackColor,
+          ),
         ),
         title: Text(
           "Masuk",
@@ -105,7 +111,16 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    height: 30.0,
+                  ),
+                  const Separator(
+                    text: "Atau masuk dengan",
+                  ),
+                  const SizedBox(
+                    height: 30.0,
+                  ),
                 ],
               ),
             )),
