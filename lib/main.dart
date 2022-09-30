@@ -22,13 +22,11 @@ class _MainAppState extends State<MainApp> {
       // home: const Splash(),
       initialRoute: RouteName.splash,
       routes: {
-        // Cara rapi
-        RouteName.splash:(context) => const Splash(),
+        RouteName.splash: (context) => const Splash(),
         RouteName.login: (context) => const LoginPage(),
         RouteName.register: (context) => const RegisterPage(),
         RouteName.home: (context) => const Home(),
 
-        // Cara manual
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
         // '/home': (context) => const Home()
