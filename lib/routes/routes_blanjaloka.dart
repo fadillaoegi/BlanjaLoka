@@ -11,4 +11,5 @@ class RouteBlanjaloka {
   static const success = '/successpage';
   static const passSuccess = '/passSuccess';
   static const sendLink = '/sendLink';
+  static const message = '/message';
 }

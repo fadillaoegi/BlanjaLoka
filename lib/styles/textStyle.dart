@@ -23,6 +23,10 @@ final TextStyle textWhite600 = GoogleFonts.roboto(
   color: ColorBlanjaloka.backgroundColor,
   fontWeight: FontWeight.w600,
 );
+final TextStyle textWhite500 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.backgroundColor,
+  fontWeight: FontWeight.w500,
+);
 
 // Red Color
 final TextStyle textRed500 = GoogleFonts.roboto(
@@ -44,4 +48,10 @@ final TextStyle textBlack500 = GoogleFonts.roboto(
 final TextStyle textBlack400 = GoogleFonts.roboto(
   color: ColorBlanjaloka.blackColor,
   fontWeight: FontWeight.w400,
+);
+
+//  Grey Color
+final TextStyle textGrey500 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.blackColor,
+  fontWeight: FontWeight.w500,
 );

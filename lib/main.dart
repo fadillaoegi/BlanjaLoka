@@ -21,13 +21,14 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.passSuccess,
+      initialRoute: RouteBlanjaloka.login,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.login: (context) => const LoginPage(),
         RouteBlanjaloka.register: (context) => const RegisterPage(),
         RouteBlanjaloka.home: (context) => const Home(),
         RouteBlanjaloka.passSuccess: (context) => const PassSuccess(),
+        // RouteBlanjaloka.message:(context) => const 
 
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),

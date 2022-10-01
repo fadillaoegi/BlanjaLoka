@@ -2,6 +2,7 @@ import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
+import 'package:blanjaloka/widgets/button_auth.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';
 import 'package:blanjaloka/widgets/inputText.dart';
 import 'package:blanjaloka/widgets/separator.dart';
@@ -44,83 +45,136 @@ class _LoginPageState extends State<LoginPage> {
                 horizontal: 26.8,
                 vertical: 26.8,
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Welcome Back!",
-                    style: textBlack600.copyWith(
-                      fontSize: 18.0,
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Welcome Back!",
+                      style: textBlack600.copyWith(
+                        fontSize: 18.0,
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 10.0,
-                  ),
-                  Text(
-                    "Masukkan email atau nomor telepon dan kata\nsandi anda untuk melanjutkan.",
-                    style: textGrey400.copyWith(
-                      fontSize: 14.0,
+                    const SizedBox(
+                      height: 10.0,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 32.0,
-                  ),
-                  Text(
-                    "Email atau Nomor Telepon",
-                    style: textBlack500.copyWith(fontSize: 14.0),
-                  ),
-                  const SizedBox(
-                    height: 8.0,
-                  ),
-                  InputDefault(),
-                  const SizedBox(
-                    height: 20.0,
-                  ),
-                  Text(
-                    "Kata Sandi",
-                    style: textBlack500.copyWith(
-                      fontSize: 14.0,
+                    Text(
+                      "Masukkan email atau nomor telepon dan kata\nsandi anda untuk melanjutkan.",
+                      style: textGrey400.copyWith(
+                        fontSize: 14.0,
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 8.0,
-                  ),
-                  const InputPass(),
-                  const SizedBox(
-                    height: 6.0,
-                  ),
-                  TextClick(
-                    text: "Lupa Password?",
-                    size: 12.0,
-                  ),
-                  const SizedBox(
-                    height: 28.0,
-                  ),
-                  SizedBox(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ButtonDefault(
-                          height: 48.8,
-                          width: 323.0,
-                          onPress: () {},
-                          text: "Masuk",
-                          color: ColorBlanjaloka.primaryColor,
-                          radius: 10.0,
-                        ),
-                      ],
+                    const SizedBox(
+                      height: 32.0,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 30.0,
-                  ),
-                  const Separator(
-                    text: "Atau masuk dengan",
-                  ),
-                  const SizedBox(
-                    height: 30.0,
-                  ),
-                ],
+                    Text(
+                      "Email atau Nomor Telepon",
+                      style: textBlack500.copyWith(fontSize: 14.0),
+                    ),
+                    const SizedBox(
+                      height: 8.0,
+                    ),
+                    InputDefault(),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    Text(
+                      "Kata Sandi",
+                      style: textBlack500.copyWith(
+                        fontSize: 14.0,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 8.0,
+                    ),
+                    const InputPass(),
+                    const SizedBox(
+                      height: 6.0,
+                    ),
+                    TextClick(
+                      text: "Lupa Password?",
+                      size: 12.0,
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    SizedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ButtonDefault(
+                            height: 48.8,
+                            width: 323.0,
+                            onPress: () {},
+                            text: "Masuk",
+                            color: ColorBlanjaloka.primaryColor,
+                            radius: 10.0,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30.0,
+                    ),
+                    const Separator(
+                      text: "Atau masuk dengan",
+                    ),
+                    const SizedBox(
+                      height: 30.0,
+                    ),
+                    SizedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ButtonAuth(
+                            image: 'assets/img/logoGoogle.png',
+                            text: 'Google',
+                            onPress: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    SizedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ButtonAuth(
+                            image: 'assets/img/logoFB.png',
+                            text: 'Facebook',
+                            onPress: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    SizedBox(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Sudah punya akun?",
+                            style: textGrey500.copyWith(
+                              fontSize: 14.0,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 4.0,
+                          ),
+                          TextClick(
+                            onPress: () {},
+                            size: 14.0,
+                            text: "Masuk disini",
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             )),
       ),
