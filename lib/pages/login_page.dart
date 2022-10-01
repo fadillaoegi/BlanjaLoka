@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
-  static const login2 = RouteName.home;
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -121,7 +120,6 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 30.0,
                   ),
-                  
                 ],
               ),
             )),

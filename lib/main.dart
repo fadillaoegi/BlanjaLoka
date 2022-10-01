@@ -1,5 +1,6 @@
 import 'package:blanjaloka/pages/home_page.dart';
 import 'package:blanjaloka/pages/login_page.dart';
+import 'package:blanjaloka/pages/passSuccess_page.dart';
 import 'package:blanjaloka/pages/regis_page.dart';
 import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
@@ -20,12 +21,13 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteName.splash,
+      initialRoute: RouteBlanjaloka.passSuccess,
       routes: {
-        RouteName.splash: (context) => const Splash(),
-        RouteName.login: (context) => const LoginPage(),
-        RouteName.register: (context) => const RegisterPage(),
-        RouteName.home: (context) => const Home(),
+        RouteBlanjaloka.splash: (context) => const Splash(),
+        RouteBlanjaloka.login: (context) => const LoginPage(),
+        RouteBlanjaloka.register: (context) => const RegisterPage(),
+        RouteBlanjaloka.home: (context) => const Home(),
+        RouteBlanjaloka.passSuccess: (context) => const PassSuccess(),
 
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
