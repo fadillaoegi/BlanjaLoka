@@ -2,6 +2,7 @@ import 'package:blanjaloka/pages/home_page.dart';
 import 'package:blanjaloka/pages/login_page.dart';
 import 'package:blanjaloka/pages/passSuccess_page.dart';
 import 'package:blanjaloka/pages/regis_page.dart';
+import 'package:blanjaloka/pages/sendLink_page.dart';
 import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
@@ -21,14 +22,14 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.login,
+      initialRoute: RouteBlanjaloka.register,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.login: (context) => const LoginPage(),
         RouteBlanjaloka.register: (context) => const RegisterPage(),
         RouteBlanjaloka.home: (context) => const Home(),
         RouteBlanjaloka.passSuccess: (context) => const PassSuccess(),
-        // RouteBlanjaloka.message:(context) => const 
+        RouteBlanjaloka.message: (context) => const SenLinkPage(),
 
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
