@@ -17,6 +17,10 @@ final TextStyle textGrey400 = GoogleFonts.roboto(
   color: ColorBlanjaloka.iconColor,
   fontWeight: FontWeight.w400,
 );
+final TextStyle textGrey600 = GoogleFonts.roboto(
+  color: ColorBlanjaloka.iconColor,
+  fontWeight: FontWeight.w600,
+);
 
 // white Color
 final TextStyle textWhite600 = GoogleFonts.roboto(

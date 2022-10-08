@@ -22,7 +22,9 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: const Icon(
             Icons.arrow_back,
             color: ColorBlanjaloka.blackColor,
@@ -92,6 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 6.0,
                     ),
                     TextClick(
+                      onPress: () {},
                       text: "Lupa Password?",
                       size: 12.0,
                     ),

@@ -2,8 +2,8 @@ import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:flutter/material.dart';
 
-class SenLinkPage extends StatelessWidget {
-  const SenLinkPage({Key? key}) : super(key: key);
+class SendLinkPage extends StatelessWidget {
+  const SendLinkPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

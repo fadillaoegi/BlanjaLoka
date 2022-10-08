@@ -1,4 +1,5 @@
 import 'package:blanjaloka/pages/login_page.dart';
+import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/buttonOutLine.dart';
@@ -35,10 +36,15 @@ class Home extends StatelessWidget {
                   ),
                   ButtonDefault(
                     onPress: (() {
-                      Navigator.of(context)
-                          .push(MaterialPageRoute(builder: (context) {
-                        return const LoginPage();
-                      }));
+                      Navigator.pushNamed(
+                        context,
+                        RouteBlanjaloka.login,
+                      );
+                      // Navigator.of(context).push(
+                      //   MaterialPageRoute(builder: (context) {
+                      //     return const LoginPage();
+                      //   }),
+                      // );
                     }),
                     height: 48.0,
                     width: 323.0,
@@ -57,11 +63,15 @@ class Home extends StatelessWidget {
                   ),
                   ButtonOutLine(
                     onPress: (() {
-                      Navigator.push(
+                      Navigator.pushNamed(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const LoginPage()),
+                        RouteBlanjaloka.register,
                       );
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //       builder: (context) => const LoginPage()),
+                      // );
                     }),
                     height: 48.0,
                     width: 323.0,
