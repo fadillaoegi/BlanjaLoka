@@ -1,7 +1,6 @@
 import 'dart:async';
 
-
-import 'package:blanjaloka/pages/home_page.dart';
+import 'package:blanjaloka/pages/first_page.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -23,7 +22,7 @@ class _SplashState extends State<Splash> {
     return Timer(durasiSplash, () {
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (context) {
-        return const Home();
+        return const First();
       }));
     });
   }

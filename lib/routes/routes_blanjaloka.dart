@@ -4,6 +4,7 @@ class RouteBlanjaloka {
   static String root = '/';
   static String splash = '/splash';
   static const home = '/home';
+  static const first = '/first';
   static const login = '/login';
   static const register = '/register';
   static const forgotPass = '/forgotpass';
