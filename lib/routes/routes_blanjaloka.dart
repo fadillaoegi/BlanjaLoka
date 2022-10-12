@@ -14,4 +14,5 @@ class RouteBlanjaloka {
   static const sendLink = '/sendLink';
   static const message = '/message';
   static const agenda = '/agenda';
+  static const detailBisnis = '/detailBisnis';
 }

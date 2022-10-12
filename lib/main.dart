@@ -10,7 +10,9 @@ import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MainApp());
+void main() => runApp(
+      const MainApp(),
+    );
 
 class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
@@ -36,7 +38,6 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.message: (context) => const SendLinkPage(),
         RouteBlanjaloka.forgotPass: (context) => const ForgotPass(),
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
-
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
         // '/home': (context) => const Home()

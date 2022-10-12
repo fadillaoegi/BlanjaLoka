@@ -36,3 +36,16 @@ class Separator extends StatelessWidget {
     );
   }
 }
+
+class Separator2 extends StatelessWidget {
+  const Separator2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Divider(
+      height: 1,
+      thickness: 1,
+      color: ColorBlanjaloka.dividerColor,
+    );
+  }
+}
