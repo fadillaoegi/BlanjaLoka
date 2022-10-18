@@ -8,12 +8,13 @@ class ItemProfile extends StatelessWidget {
     Key? key,
     this.icon,
     this.label,
-    this.color,
+    this.color, this.colorArrow
   }) : super(key: key);
 
   String? label;
   Icon? icon;
   Color? color;
+  Color? colorArrow;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,10 @@ class ItemProfile extends StatelessWidget {
               ),
             ],
           ),
-          const Icon(Icons.chevron_right),
+          Icon(
+            Icons.chevron_right,
+            color: colorArrow,
+          ),
         ],
       ),
     );

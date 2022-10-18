@@ -138,12 +138,11 @@ class ProfilePage extends StatelessWidget {
                             height: 15.0,
                           ),
                           ItemProfile(
-                            icon: const Icon(
-                              Icons.logout,
-                              color: ColorBlanjaloka.primaryColor,
-                            ),
+                            icon: const Icon(Icons.logout,
+                                color: ColorBlanjaloka.redColor),
                             label: "Keluar",
-                            color: ColorBlanjaloka.primaryColor,
+                            color: ColorBlanjaloka.redColor,
+                            colorArrow: ColorBlanjaloka.redColor,
                           ),
                           const SizedBox(
                             height: 15.0,

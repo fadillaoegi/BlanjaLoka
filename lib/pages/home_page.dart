@@ -1,6 +1,6 @@
 import 'package:blanjaloka/pages/agenda_page.dart';
 import 'package:blanjaloka/pages/first_page.dart';
-import 'package:blanjaloka/pages/login_page.dart';
+import 'package:blanjaloka/pages/auth/login_page.dart';
 import 'package:blanjaloka/pages/profile_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
