@@ -1,11 +1,11 @@
 import 'package:blanjaloka/pages/agenda_page.dart';
-import 'package:blanjaloka/pages/forgotPass_page.dart';
+import 'package:blanjaloka/pages/auth/forgotPass_page.dart';
 import 'package:blanjaloka/pages/first_page.dart';
 import 'package:blanjaloka/pages/home_page.dart';
 import 'package:blanjaloka/pages/auth/login_page.dart';
-import 'package:blanjaloka/pages/passSuccess_page.dart';
+import 'package:blanjaloka/pages/auth/passSuccess_page.dart';
 import 'package:blanjaloka/pages/auth/regis_page.dart';
-import 'package:blanjaloka/pages/sendLink_page.dart';
+import 'package:blanjaloka/pages/auth/sendLink_page.dart';
 import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +27,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.home,
+      initialRoute: RouteBlanjaloka.splash,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
