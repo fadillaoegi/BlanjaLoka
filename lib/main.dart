@@ -1,4 +1,5 @@
 import 'package:blanjaloka/pages/agenda_page.dart';
+import 'package:blanjaloka/pages/auth/forgotLinkPass_page.dart';
 import 'package:blanjaloka/pages/auth/forgotPass_page.dart';
 import 'package:blanjaloka/pages/first_page.dart';
 import 'package:blanjaloka/pages/home_page.dart';
@@ -27,7 +28,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.splash,
+      initialRoute: RouteBlanjaloka.forgotPass,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
@@ -36,8 +37,10 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.register: (context) => const RegisterPage(),
         RouteBlanjaloka.passSuccess: (context) => const PassSuccess(),
         RouteBlanjaloka.message: (context) => const SendLinkPage(),
+        RouteBlanjaloka.forgotLinkPass: (context) => ForgotLinkPass(),
         RouteBlanjaloka.forgotPass: (context) => const ForgotPass(),
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
+
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
         // '/home': (context) => const Home()

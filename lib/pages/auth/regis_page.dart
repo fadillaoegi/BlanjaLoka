@@ -4,7 +4,7 @@ import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/button_auth.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';
-import 'package:blanjaloka/widgets/inputText.dart';
+import 'package:blanjaloka/widgets/inputDefault.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:blanjaloka/widgets/textClick.dart';
 import 'package:flutter/material.dart';
@@ -233,7 +233,12 @@ class _RegisterPageState extends State<RegisterPage> {
                             width: 4.0,
                           ),
                           TextClick(
-                            onPress: () {},
+                            onPress: () {
+                              Navigator.pushNamed(
+                                context,
+                                RouteBlanjaloka.login,
+                              );
+                            },
                             size: 14.0,
                             text: "Masuk disini",
                           ),

@@ -40,11 +40,6 @@ class First extends StatelessWidget {
                         context,
                         RouteBlanjaloka.login,
                       );
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(builder: (context) {
-                      //     return const LoginPage();
-                      //   }),
-                      // );
                     }),
                     height: 48.0,
                     width: 323.0,

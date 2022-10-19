@@ -7,7 +7,7 @@ class RouteBlanjaloka {
   static String first = '$root first';
   static String login = '$root login';
   static String register = '$root register';
-  static String forgotPass = '$root forgotpass';
+  static String forgotLinkPass = '$root forgotlinkpass';
   static String errorPage = '$root errorpage';
   static String success = '$root successpage';
   static String passSuccess = '$root passSuccess';
@@ -15,4 +15,6 @@ class RouteBlanjaloka {
   static String message = '$root message';
   static String agenda = '$root agenda';
   static String detailBisnis = '$root detailBisnis';
+  static String forgotPass = '$root forgotPass';
+  static String kebijakanprivasi = '$root kebijakanprivasi';
 }

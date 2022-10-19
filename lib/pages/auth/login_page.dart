@@ -4,7 +4,7 @@ import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/button_auth.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';
-import 'package:blanjaloka/widgets/inputText.dart';
+import 'package:blanjaloka/widgets/inputDefault.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:blanjaloka/widgets/textClick.dart';
 import 'package:flutter/material.dart';
@@ -160,7 +160,7 @@ class _LoginPageState extends State<LoginPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Sudah punya akun?",
+                            "Belum punya akun?",
                             style: textGrey500.copyWith(
                               fontSize: 14.0,
                             ),
@@ -169,7 +169,12 @@ class _LoginPageState extends State<LoginPage> {
                             width: 4.0,
                           ),
                           TextClick(
-                            onPress: () {},
+                            onPress: () {
+                              Navigator.pushNamed(
+                                context,
+                                RouteBlanjaloka.register,
+                              );
+                            },
                             size: 14.0,
                             text: "Masuk disini",
                           ),
