@@ -7,6 +7,7 @@ import 'package:blanjaloka/pages/auth/login_page.dart';
 import 'package:blanjaloka/pages/auth/passSuccess_page.dart';
 import 'package:blanjaloka/pages/auth/regis_page.dart';
 import 'package:blanjaloka/pages/auth/sendLink_page.dart';
+import 'package:blanjaloka/pages/privasi_page.dart';
 import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.forgotPass,
+      initialRoute: RouteBlanjaloka.kebijakanprivasi,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
@@ -40,6 +41,7 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.forgotLinkPass: (context) => ForgotLinkPass(),
         RouteBlanjaloka.forgotPass: (context) => const ForgotPass(),
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
+        RouteBlanjaloka.kebijakanprivasi: (context) => const Privasi(),
 
         // '/login': (context) => const LoginPage(),
         // '/register': (context) => const RegisterPage(),
