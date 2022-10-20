@@ -94,7 +94,10 @@ class _LoginPageState extends State<LoginPage> {
                       height: 6.0,
                     ),
                     TextClick(
-                      onPress: () {},
+                      onPress: () {
+                        Navigator.pushNamed(
+                            context, RouteBlanjaloka.forgotPass);
+                      },
                       text: "Lupa Password?",
                       size: 12.0,
                     ),
@@ -108,7 +111,10 @@ class _LoginPageState extends State<LoginPage> {
                           ButtonDefault(
                             height: 48.8,
                             width: 323.0,
-                            onPress: () {},
+                            onPress: () {
+                              Navigator.pushReplacementNamed(
+                                  context, RouteBlanjaloka.home);
+                            },
                             text: "Masuk",
                             color: ColorBlanjaloka.primaryColor,
                             radius: 10.0,

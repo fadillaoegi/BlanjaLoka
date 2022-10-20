@@ -1,3 +1,4 @@
+import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
@@ -55,7 +56,12 @@ class PassSuccess extends StatelessWidget {
             ButtonDefault(
               height: 48.0,
               width: 323.0,
-              onPress: () {},
+              onPress: () {
+                Navigator.pushReplacementNamed(
+                  context,
+                  RouteBlanjaloka.home,
+                );
+              },
               radius: 10.0,
               color: ColorBlanjaloka.primaryColor,
               text: "Masuk",

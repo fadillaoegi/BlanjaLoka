@@ -1,3 +1,4 @@
+import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
@@ -72,7 +73,9 @@ class ForgotPass extends StatelessWidget {
               ButtonDefault(
                 height: 48.0,
                 width: 323.0,
-                onPress: (() {}),
+                onPress: (() {
+                  Navigator.pushNamed(context, RouteBlanjaloka.forgotLinkPass);
+                }),
                 color: ColorBlanjaloka.primaryColor,
                 radius: 10.0,
                 text: "kirim",

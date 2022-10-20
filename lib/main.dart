@@ -29,7 +29,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.kebijakanprivasi,
+      initialRoute: RouteBlanjaloka.login,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
