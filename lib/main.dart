@@ -3,7 +3,7 @@ import 'package:blanjaloka/pages/auth/forgotLinkPass_page.dart';
 import 'package:blanjaloka/pages/auth/forgotPass_page.dart';
 import 'package:blanjaloka/pages/first_page.dart';
 import 'package:blanjaloka/pages/home_page.dart';
-import 'package:blanjaloka/pages/auth/login_page.dart';
+import 'package:blanjaloka/pages/auth/login_redisign_page.dart';
 import 'package:blanjaloka/pages/auth/passSuccess_page.dart';
 import 'package:blanjaloka/pages/auth/regis_page.dart';
 import 'package:blanjaloka/pages/auth/sendLink_page.dart';
@@ -12,9 +12,7 @@ import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(
-      const MainApp(),
-    );
+void main() => runApp(const MainApp());
 
 class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
@@ -42,10 +40,6 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.forgotPass: (context) => const ForgotPass(),
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
         RouteBlanjaloka.kebijakanprivasi: (context) => const Privasi(),
-
-        // '/login': (context) => const LoginPage(),
-        // '/register': (context) => const RegisterPage(),
-        // '/home': (context) => const Home()
       },
     );
   }
