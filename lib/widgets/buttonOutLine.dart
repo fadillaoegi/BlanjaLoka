@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class ButtonOutLine extends StatelessWidget {
   Color? color;
+  Color? colorBorder;
   String? text;
   double? height;
   double? width;
@@ -11,11 +12,12 @@ class ButtonOutLine extends StatelessWidget {
   VoidCallback? onPress;
   ButtonOutLine(
       {Key? key,
-      this.color,
-      this.height,
+      this.color = ColorBlanjaloka.backgroundColor,
+      this.colorBorder,
+      this.height = 40.0,
       this.onPress,
       this.text,
-      this.width,
+      this.width = 323.0,
       this.radius})
       : super(key: key);
 
@@ -26,14 +28,14 @@ class ButtonOutLine extends StatelessWidget {
       width: width,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-              side: const BorderSide(color: Color(0xff398AB9), width: 1),
+              side: BorderSide(color: colorBorder!, width: 1),
               primary: color,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(radius!))),
           onPressed: onPress,
           child: Text(
             text!,
-            style: const TextStyle(color: Color(0xff398AB9)),
+            style: TextStyle(color: colorBorder),
           )),
     );
   }

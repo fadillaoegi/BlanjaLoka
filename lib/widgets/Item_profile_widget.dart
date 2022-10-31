@@ -47,3 +47,12 @@ class ItemProfile extends StatelessWidget {
     );
   }
 }
+
+class ItemProfile2 extends StatelessWidget {
+  const ItemProfile2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}

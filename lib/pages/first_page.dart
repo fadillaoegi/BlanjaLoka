@@ -71,6 +71,7 @@ class First extends StatelessWidget {
                     height: 48.0,
                     width: 323.0,
                     color: ColorBlanjaloka.backgroundColor,
+                    colorBorder: ColorBlanjaloka.primaryColor,
                     text: "Daftar",
                     radius: 10.0,
                   ),
