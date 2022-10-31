@@ -9,14 +9,14 @@ import 'package:blanjaloka/widgets/separator.dart';
 import 'package:blanjaloka/widgets/textClick.dart';
 import 'package:flutter/material.dart';
 
-class LoginPageOld extends StatefulWidget {
-  const LoginPageOld({Key? key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPageOld> createState() => _LoginPageOldState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginPageOldState extends State<LoginPageOld> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

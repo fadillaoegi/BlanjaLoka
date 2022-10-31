@@ -5,14 +5,14 @@ import 'package:blanjaloka/widgets/buttonOutLine.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _ProfilePageState extends State<ProfilePage> {
   // Widget Card Profile
   Widget sectionOne = Container(
     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
@@ -264,6 +264,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
+              ),
+              const SizedBox(
+                height: 40.0,
               ),
               // BUTTON KELUAR
               ButtonOutLine(
