@@ -19,7 +19,7 @@ class _InputPassState extends State<InputPass> {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    return TextField(
       autofocus: false,
       cursorColor: Colors.black,
       obscureText: obscure,
@@ -39,8 +39,9 @@ class _InputPassState extends State<InputPass> {
 
         // errorText: "Cek email atau password anda lagi",
         errorStyle: textRed500,
-        border: const OutlineInputBorder(
-          borderSide: BorderSide(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10.0),
+          borderSide: const BorderSide(
             color: ColorBlanjaloka.blackColor,
             width: 5.0,
           ),

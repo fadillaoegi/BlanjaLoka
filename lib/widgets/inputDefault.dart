@@ -2,6 +2,7 @@ import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class InputDefault extends StatelessWidget {
   String? hint;
 

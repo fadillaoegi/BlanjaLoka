@@ -2,6 +2,7 @@ import 'package:blanjaloka/pages/agenda_page.dart';
 import 'package:blanjaloka/pages/auth/forgotLinkPass_page.dart';
 import 'package:blanjaloka/pages/auth/forgotPass_page.dart';
 import 'package:blanjaloka/pages/auth/login_page.dart';
+import 'package:blanjaloka/pages/edit_pass.dart';
 import 'package:blanjaloka/pages/first_page.dart';
 import 'package:blanjaloka/pages/home_page.dart';
 import 'package:blanjaloka/pages/auth/passSuccess_page.dart';
@@ -17,7 +18,7 @@ void main() => runApp(const MainApp());
 class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
 
-  @override 
+  @override
   State<MainApp> createState() => _MainAppState();
 }
 
@@ -27,7 +28,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.home,
+      initialRoute: RouteBlanjaloka.editpass,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
@@ -40,6 +41,7 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.forgotPass: (context) => const ForgotPass(),
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
         RouteBlanjaloka.kebijakanprivasi: (context) => const Privasi(),
+        RouteBlanjaloka.editpass: (context) => const Editpass(),
       },
     );
   }

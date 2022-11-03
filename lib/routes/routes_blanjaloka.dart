@@ -1,7 +1,7 @@
 import 'package:blanjaloka/pages/splash_page.dart';
 
 class RouteBlanjaloka {
-  static String root = '/blanjaloka';
+  static String root = '/blanjaloka/';
   static String splash = '$root splash';
   static String home = '$root home';
   static String first = '$root first';
@@ -17,4 +17,5 @@ class RouteBlanjaloka {
   static String detailBisnis = '$root detailBisnis';
   static String forgotPass = '$root forgotPass';
   static String kebijakanprivasi = '$root kebijakanprivasi';
+  static String editpass = '$root editpass';
 }
