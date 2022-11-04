@@ -1,3 +1,4 @@
+import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/size_responsive.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
@@ -154,25 +155,30 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     const Separator2(),
-                    Container(
-                      margin: const EdgeInsets.only(
-                        bottom: 13.0,
-                        top: 13.0,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: const [
-                              Icon(Icons.password),
-                              SizedBox(
-                                width: 12.0,
-                              ),
-                              Text("Ubah Kata Sandi"),
-                            ],
-                          ),
-                          const Icon(Icons.chevron_right)
-                        ],
+                    InkWell(
+                      onTap: (() {
+                        Navigator.pushNamed(context, RouteBlanjaloka.editpass);
+                      }),
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                          bottom: 13.0,
+                          top: 13.0,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: const [
+                                Icon(Icons.password),
+                                SizedBox(
+                                  width: 12.0,
+                                ),
+                                Text("Ubah Kata Sandi"),
+                              ],
+                            ),
+                            const Icon(Icons.chevron_right)
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -271,7 +277,10 @@ class _ProfilePageState extends State<ProfilePage> {
               // BUTTON KELUAR
               ButtonOutLine(
                 text: "Keluar",
-                onPress: () {},
+                onPress: () {
+                  Navigator.pushReplacementNamed(
+                      context, RouteBlanjaloka.first);
+                },
                 colorBorder: ColorBlanjaloka.redColor,
                 radius: 10.0,
               )

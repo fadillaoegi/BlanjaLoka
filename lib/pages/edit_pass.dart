@@ -80,7 +80,38 @@ class _EditpassState extends State<Editpass> {
                   height: 50.0,
                   width: 323.0,
                   text: "Ubah Kata Sandi",
-                  onPress: () {},
+                  onPress: () {
+                    showDialog(
+                        context: context,
+                        builder: (ctx) => AlertDialog(
+                              title: Text(
+                                "Kata sandi berhasil diubah!",
+                                style: textBlack600.copyWith(fontSize: 18.0),
+                                textAlign: TextAlign.center,
+                              ),
+                              content: Container(
+                                height: 250.0,
+                                width: 323.0,
+                                padding: const EdgeInsets.all(0.0),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Silakan masuk kembali dengan kata sandi\nbaru anda",
+                                      style:
+                                          textBlack400.copyWith(fontSize: 14.0),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    Image.asset(
+                                      "assets/img/success.png",
+                                      height: 160.0,
+                                      width: 180.0,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              actions: [],
+                            ));
+                  },
                   radius: 10.0,
                 ),
               )
