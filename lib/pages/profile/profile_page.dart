@@ -3,8 +3,8 @@ import 'package:blanjaloka/widgets/Item_profile_widget.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:flutter/material.dart';
 
-class ProfilePageOld extends StatelessWidget {
-  const ProfilePageOld({Key? key}) : super(key: key);
+class ProfilePageOldOne extends StatelessWidget {
+  const ProfilePageOldOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

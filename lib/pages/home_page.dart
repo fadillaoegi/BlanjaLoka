@@ -1,5 +1,6 @@
 import 'package:blanjaloka/pages/agenda_page.dart';
-import 'package:blanjaloka/pages/profile_redisign_page.dart';
+import 'package:blanjaloka/pages/profile/profile_redisign2.dart';
+import 'package:blanjaloka/pages/profile/profile_redisign_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:flutter/material.dart';

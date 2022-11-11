@@ -6,14 +6,14 @@ import 'package:blanjaloka/widgets/buttonOutLine.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:flutter/material.dart';
 
-class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+class ProfilePageOldTwo extends StatefulWidget {
+  const ProfilePageOldTwo({super.key});
 
   @override
-  State<ProfilePage> createState() => _ProfilePageState();
+  State<ProfilePageOldTwo> createState() => _ProfilePageOldTwoState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _ProfilePageOldTwoState extends State<ProfilePageOldTwo> {
   // Widget Card Profile
   Widget sectionOne = Container(
     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
