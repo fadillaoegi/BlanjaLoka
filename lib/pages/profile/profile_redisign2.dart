@@ -111,6 +111,15 @@ class _ProfilePageState extends State<ProfilePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Section 1
+              Container(
+                height: 70.0,
+                width: 323.0,
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [Text("data")],
+                ),
+              )
             ],
           ),
         ),

@@ -9,6 +9,7 @@ import 'package:blanjaloka/pages/auth/passSuccess_page.dart';
 import 'package:blanjaloka/pages/auth/regis_page.dart';
 import 'package:blanjaloka/pages/auth/sendLink_page.dart';
 import 'package:blanjaloka/pages/privasi_page.dart';
+import 'package:blanjaloka/pages/profile/edit_profile.dart';
 import 'package:blanjaloka/pages/splash_page.dart';
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Splash(),
-      initialRoute: RouteBlanjaloka.home,
+      initialRoute: RouteBlanjaloka.editprofile,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
@@ -42,6 +43,7 @@ class _MainAppState extends State<MainApp> {
         RouteBlanjaloka.agenda: (context) => const AgendaPage(),
         RouteBlanjaloka.kebijakanprivasi: (context) => const Privasi(),
         RouteBlanjaloka.editpass: (context) => const Editpass(),
+        RouteBlanjaloka.editprofile: (context) => const EditProfilePage(),
       },
     );
   }

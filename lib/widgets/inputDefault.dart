@@ -4,29 +4,31 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class InputDefault extends StatelessWidget {
-  String? hint;
+  String? hint = "Masukkan email atau nomor telepon anda";
 
-  InputDefault({Key? key}) : super(key: key);
+  InputDefault({Key? key, this.hint}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       autofocus: false,
-      cursorColor: Colors.black,
+      cursorColor: ColorBlanjaloka.primaryColor,
       obscureText: false,
       autocorrect: true,
       decoration: InputDecoration(
-          hintText: "Masukkan email atau nomor telepon anda",
-          hintStyle: textGrey400.copyWith(
-            fontSize: 12.0,
-          ),
-          // errorText: "Cek email atau password anda lagi",
-          errorStyle: textRed500,
-          border: const OutlineInputBorder(
-              borderSide: BorderSide(
+        hintText: hint,
+        hintStyle: textGrey400.copyWith(
+          fontSize: 12.0,
+        ),
+        // errorText: "Cek email atau password anda lagi",
+        errorStyle: textRed500,
+        border: const OutlineInputBorder(
+          borderSide: BorderSide(
             color: ColorBlanjaloka.blackColor,
-            width: 5.0,
-          ))),
+            width: 10.0,
+          ),
+        ),
+      ),
     );
   }
 }
