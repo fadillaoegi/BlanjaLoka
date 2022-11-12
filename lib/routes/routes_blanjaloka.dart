@@ -19,4 +19,5 @@ class RouteBlanjaloka {
   static String kebijakanprivasi = '$root/kebijakanprivasi';
   static String editpass = '$root/editpass';
   static String editprofile = '$root/editprofile';
+  static String infoaccount = '$root/infoaccount';
 }
