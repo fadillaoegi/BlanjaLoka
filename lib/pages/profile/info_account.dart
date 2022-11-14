@@ -46,18 +46,30 @@ class InfoAccount extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.only(top: 8.0, bottom: 15.0),
-                    height: 40.0,
-                    child: InputDefault(
-                      hint: "email@gmail.com",
-                    ),
-                  ),
+                      margin: const EdgeInsets.only(top: 8.0, bottom: 15.0),
+                      height: 40.0,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 6,
+                            child: InputDefault(
+                              hint: "email@gmail.com",
+                            ),
+                          ),
+                          Expanded(
+                              child: IconButton(
+                            icon: const Icon(Icons.drive_file_rename_outline),
+                            onPressed: () {},
+                          )),
+                        ],
+                      )),
                 ],
               ),
             ),
             const SizedBox(
               height: 14.0,
             ),
+            // INPUT 2
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

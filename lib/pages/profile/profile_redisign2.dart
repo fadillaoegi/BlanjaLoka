@@ -2,6 +2,8 @@ import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/size_responsive.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
+import 'package:blanjaloka/widgets/Item_profile_widget.dart';
+import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/buttonOutLine.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:flutter/material.dart';
@@ -17,18 +19,13 @@ class _ProfilePageState extends State<ProfilePage> {
   // Widget Card Profile
   Widget sectionOne = Container(
     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+    margin: const EdgeInsets.only(top: 26.0),
     width: widhtBox,
-    height: 171.0,
+    height: 90.0,
     decoration: BoxDecoration(
         color: ColorBlanjaloka.backgroundColor,
         borderRadius: BorderRadius.circular(8.0),
-        boxShadow: [
-          BoxShadow(
-              color: ColorBlanjaloka.blackColor.withOpacity(0.2),
-              offset: const Offset(0, 3),
-              spreadRadius: 5.0,
-              blurRadius: 7.0),
-        ]),
+        border: Border.all(width: 1.0, color: ColorBlanjaloka.blackColor)),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -57,71 +54,214 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
-                const Text("087909890765"),
                 const Text("alifa@gmail.com"),
               ],
             )
           ],
         ),
+      ],
+    ),
+  );
 
-        // Alert Verivication
-        const SizedBox(
-          height: 16.0,
+  Widget alertNotif = Container(
+    padding: const EdgeInsets.all(10.0),
+    height: 73.0,
+    width: 323.0,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(6.0),
+        color: ColorBlanjaloka.redColor.withOpacity(0.2)),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.info_outline),
+          color: ColorBlanjaloka.redColor,
         ),
-        const Separator2(),
-        const SizedBox(
-          height: 16.0,
+        Text(
+          "Lengkapi data diri dan data\nperusahaan Anda untuk\nmengajukan investasi.",
+          style: textBlack400.copyWith(color: Colors.red, fontSize: 11.0),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.info_outline),
-              color: ColorBlanjaloka.redColor,
+        Container(
+          height: 26.0,
+          width: 108.0,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0)),
+          child: ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(primary: ColorBlanjaloka.redColor),
+            child: Text(
+              "Lengkapi data",
+              style: textBlack500.copyWith(
+                  color: ColorBlanjaloka.backgroundColor, fontSize: 12.0),
             ),
-            Text(
-              "Akun anda belum terverifikasi\nVerifikasi akun anda sekarang.",
-              style: textBlack400.copyWith(color: Colors.red, fontSize: 12.0),
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              style:
-                  ElevatedButton.styleFrom(primary: ColorBlanjaloka.redColor),
-              child: Text(
-                "Verifikasi",
-                style: textBlack500.copyWith(
-                    color: ColorBlanjaloka.backgroundColor, fontSize: 12.0),
-              ),
-            ),
-          ],
-        )
+          ),
+        ),
       ],
     ),
   );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: ,
+      appBar: AppBar(
+        title: const Text(
+          "Profile",
+          style: TextStyle(color: ColorBlanjaloka.blackColor),
+        ),
+        backgroundColor: ColorBlanjaloka.backgroundColor,
+      ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Section 1
-              Container(
-                height: 70.0,
-                width: 323.0,
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("data")],
-                ),
-              )
-            ],
-          ),
+        child: Column(
+          children: [
+            // Section 1
+            sectionOne,
+            const SizedBox(
+              height: 26.0,
+            ),
+            alertNotif,
+            const SizedBox(
+              height: 26.0,
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(
+                      Icons.settings,
+                      color: ColorBlanjaloka.iconColor,
+                    ),
+                    label: "Pengatura Akun",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  const Separator2(),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(
+                      Icons.language,
+                      color: ColorBlanjaloka.iconColor,
+                    ),
+                    label: "Pengaturan Bahasa",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  const Separator2(),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(
+                      Icons.help,
+                      color: ColorBlanjaloka.iconColor,
+                    ),
+                    label: "Paling Banyak Ditanyakan",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  const Separator2(),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(
+                      Icons.description,
+                      color: ColorBlanjaloka.iconColor,
+                    ),
+                    label: "Ketentuan Layanan",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  const Separator2(),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(
+                      Icons.security,
+                      color: ColorBlanjaloka.iconColor,
+                    ),
+                    label: "Kebijakan Privasi",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  const Separator2(),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 28.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ItemProfile(
+                    icon: const Icon(Icons.logout,
+                        color: ColorBlanjaloka.iconColor),
+                    label: "Keluar",
+                    color: ColorBlanjaloka.iconColor,
+                    colorArrow: ColorBlanjaloka.iconColor,
+                  ),
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );

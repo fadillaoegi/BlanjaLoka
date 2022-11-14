@@ -7,6 +7,7 @@ class RouteBlanjaloka {
   static String first = '$root/first';
   static String login = '$root/login';
   static String register = '$root/register';
+  static String profilepage = '$root/profilepage';
   static String forgotLinkPass = '$root/forgotlinkpass';
   static String errorPage = '$root/errorpage';
   static String success = '$root/successpage';
