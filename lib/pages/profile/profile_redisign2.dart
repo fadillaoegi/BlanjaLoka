@@ -123,142 +123,162 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(
               height: 26.0,
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(
-                      Icons.settings,
-                      color: ColorBlanjaloka.iconColor,
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, RouteBlanjaloka.editprofile);
+              },
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
                     ),
-                    label: "Pengatura Akun",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  const Separator2(),
-                ],
+                    ItemProfile(
+                      icon: const Icon(
+                        Icons.settings,
+                        color: ColorBlanjaloka.iconColor,
+                      ),
+                      label: "Pengatura Akun",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    const Separator2(),
+                  ],
+                ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(
-                      Icons.language,
-                      color: ColorBlanjaloka.iconColor,
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
                     ),
-                    label: "Pengaturan Bahasa",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  const Separator2(),
-                ],
+                    ItemProfile(
+                      icon: const Icon(
+                        Icons.language,
+                        color: ColorBlanjaloka.iconColor,
+                      ),
+                      label: "Pengaturan Bahasa",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    const Separator2(),
+                  ],
+                ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(
-                      Icons.help,
-                      color: ColorBlanjaloka.iconColor,
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
                     ),
-                    label: "Paling Banyak Ditanyakan",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  const Separator2(),
-                ],
+                    ItemProfile(
+                      icon: const Icon(
+                        Icons.help,
+                        color: ColorBlanjaloka.iconColor,
+                      ),
+                      label: "Paling Banyak Ditanyakan",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    const Separator2(),
+                  ],
+                ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(
-                      Icons.description,
-                      color: ColorBlanjaloka.iconColor,
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
                     ),
-                    label: "Ketentuan Layanan",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  const Separator2(),
-                ],
+                    ItemProfile(
+                      icon: const Icon(
+                        Icons.description,
+                        color: ColorBlanjaloka.iconColor,
+                      ),
+                      label: "Ketentuan Layanan",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    const Separator2(),
+                  ],
+                ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(
-                      Icons.security,
-                      color: ColorBlanjaloka.iconColor,
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
                     ),
-                    label: "Kebijakan Privasi",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  const Separator2(),
-                ],
+                    ItemProfile(
+                      icon: const Icon(
+                        Icons.security,
+                        color: ColorBlanjaloka.iconColor,
+                      ),
+                      label: "Kebijakan Privasi",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    const Separator2(),
+                  ],
+                ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 28.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 15.0,
-                  ),
-                  ItemProfile(
-                    icon: const Icon(Icons.logout,
-                        color: ColorBlanjaloka.iconColor),
-                    label: "Keluar",
-                    color: ColorBlanjaloka.iconColor,
-                    colorArrow: ColorBlanjaloka.iconColor,
-                  ),
-                ],
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 15.0,
+                    ),
+                    ItemProfile(
+                      icon: const Icon(Icons.logout,
+                          color: ColorBlanjaloka.iconColor),
+                      label: "Keluar",
+                      color: ColorBlanjaloka.iconColor,
+                      colorArrow: ColorBlanjaloka.iconColor,
+                    ),
+                  ],
+                ),
               ),
             )
           ],
