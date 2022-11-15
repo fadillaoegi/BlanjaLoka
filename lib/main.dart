@@ -30,7 +30,7 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: const Splash(),
+      // home: const Privasi(),
       initialRoute: RouteBlanjaloka.home,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),

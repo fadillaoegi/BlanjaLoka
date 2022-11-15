@@ -1,8 +1,6 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
-import 'package:blanjaloka/widgets/buttonDefault.dart';
-import 'package:blanjaloka/widgets/inputDefault.dart';
-import 'package:blanjaloka/widgets/separator.dart';
+import 'package:blanjaloka/text/privasi_text.dart';
 import 'package:flutter/material.dart';
 
 class Privasi extends StatefulWidget {
@@ -14,79 +12,166 @@ class Privasi extends StatefulWidget {
 
 class _PrivasiState extends State<Privasi> {
   bool isChecked = false;
-  String textLorem =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum facilisis leo vel fringilla. Purus sit amet volutpat consequat mauris nunc congue nisi. Turpis egestas pretium aenean pharetra. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Elit pellentesque habitant morbi tristique senectus et netus et. Lacinia at quis risus sed vulputate odio. Ornare aenean euismod elementum nisi. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Molestie at elementum eu facilisis sed odio morbi. Sit amet luctus venenatis lectus. Nunc mattis enim ut tellus elementum sagittis vitae. Mi tempus imperdiet nulla malesuada pellentesque elit. Accumsan tortor posuere ac ut consequat semper. Est ante in nibh mauris cursus mattis.Enim tortor at auctor urna nunc id cursus metus. \n\nPulvinar elementum integer enim neque volutpat. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Eget nulla facilisi etiam dignissim diam. Mi bibendum neque egestas congue quisque egestas diam. Auctor neque vitae tempus quam pellentesque nec nam. Neque sodales ut etiam sit amet nisl purus in. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus.Molestie at elementum eu facilisis sed odio morbi. Facilisis sed odio morbi quis. Dui ut ornare lectus sit. Vitae purus faucibus ornare suspendisse sed. Dui ut ornare lectus sit. Vitae purus faucibus ornare suspendisse sed.Laoreet sit amet cursus sit amet dictum. Curabitur vitae nunc sed velit dignissim. Felis eget velit aliquet sagittis id consectetur purus ut. Libero enim sed faucibus turpis in eu mi bibendum neque. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Nisl purus in mollis nunc sed id. Venenatis lectus magna fringilla urna. Tempor commodo ullamcorper a lacus vestibulum sed arcu.";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () {},
           icon: const Icon(
             Icons.arrow_back,
-            color: ColorBlanjaloka.blackColor,
+            color: Colors.black,
           ),
         ),
-        title: Text(
+        title: const Text(
           "Kebijakan Privasi",
-          style: textBlack600.copyWith(
-            fontSize: 20.0,
-          ),
+          style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: ColorBlanjaloka.backgroundColor,
+        // backgroundColor: ColorBlanjaloka.backgroundColor,
       ),
       body: Container(
-        margin: const EdgeInsets.all(14.0),
+        margin: const EdgeInsets.all(30.0),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Text(
-                textLorem,
-                style: textBlack400.copyWith(fontSize: 14.0),
-              ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              const Separator2(),
-              const SizedBox(
-                height: 10.0,
-              ),
-              Row(
-                children: [
-                  Checkbox(
-                    value: isChecked,
-                    onChanged: (bool? value) {
-                      setState(() {
-                        isChecked = value!;
-                      });
-                    },
-                  ),
-                  const SizedBox(
-                    width: 10.0,
-                  ),
-                  const Text(
-                      "Saya telah membaca dan menyetujui Kebijakan\nPrivasi dari aplikasi Blanjaloka Akselerator.")
-                ],
-              ),
-              const SizedBox(
-                height: 10.0,
-              ),
-              ButtonDefault(
-                text: "Lanjutkan",
-                color: ColorBlanjaloka.primaryColor,
-                width: 323.0,
-                height: 48.0,
-                radius: 10.0,
-                onPress: () {},
-              ),
-              const SizedBox(
-                height: 20.0,
-              ),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(p1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(p2, style: textBlack400),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(a, style: textBlack600),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(ap1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(ap2, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(ap3, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(ap4, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(b, style: textBlack600),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(bp1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(bp2, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(bp3, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(c, style: textBlack600),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(cp1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(d, style: textBlack600),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(dp1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(dp2, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(dp3, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Text(e, style: textBlack600),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(ep1, style: textBlack400),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Checkbox(
+                      value: isChecked,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          isChecked = value!;
+                        });
+                      },
+                    ),
+                    // const SizedBox(
+                    //   width: 5.0,
+                    // ),
+                    const Text(
+                      "Saya telah membaca dan menyetujui Kebijakan\nPrivasi dari aplikasi Blanjaloka Akselerator.",
+                      style: TextStyle(fontSize: 13),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                SizedBox(
+                  height: 48.0,
+                  width: 323.0,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: ColorBlanjaloka.primaryColor,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10))),
+                      onPressed: () {},
+                      child: const Text(
+                        "Lanjutkan",
+                        style: TextStyle(
+                          color: ColorBlanjaloka.backgroundColor,
+                        ),
+                      )),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+              ],
+            ),
           ),
         ),
       ),
