@@ -1,6 +1,7 @@
 import 'package:blanjaloka/styles/colors.dart';
 import 'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
+import 'package:blanjaloka/widgets/form_edit_widget.dart';
 import 'package:blanjaloka/widgets/inputDefault.dart';
 import 'package:blanjaloka/widgets/separator.dart';
 import 'package:blanjaloka/widgets/textClick.dart';
@@ -147,9 +148,9 @@ class _EditProfilePageState extends State<EditProfilePage> {
                             margin:
                                 const EdgeInsets.only(top: 8.0, bottom: 15.0),
                             height: 40.0,
-                            child: InputDefault(
-                              hint: "Masukkan tanggal lahir anda",
-                            ),
+                            child: FormEdit(
+                                hint: "masukan Tanggal Lahit Anda",
+                                onPress: (() {})),
                           ),
                         ],
                       ),
@@ -237,13 +238,16 @@ class _EditProfilePageState extends State<EditProfilePage> {
                       const SizedBox(
                         height: 16.0,
                       ),
-                      ButtonDefault(
-                        text: "Simpan",
-                        height: 48.0,
-                        width: 323.0,
-                        onPress: () {},
-                        color: ColorBlanjaloka.primaryColor,
-                        radius: 10.0,
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 30.0),
+                        child: ButtonDefault(
+                          text: "Simpan",
+                          height: 48.0,
+                          width: 323.0,
+                          onPress: () {},
+                          color: ColorBlanjaloka.primaryColor,
+                          radius: 10.0,
+                        ),
                       )
                     ],
                   ),
