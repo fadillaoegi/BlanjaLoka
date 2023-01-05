@@ -1,6 +1,6 @@
 import 'package:blanjaloka/routes/routes_blanjaloka.dart';
 import 'package:blanjaloka/styles/colors.dart';
-import 'package:blanjaloka/styles/textStyle.dart';
+import  'package:blanjaloka/styles/textStyle.dart';
 import 'package:blanjaloka/widgets/buttonDefault.dart';
 import 'package:blanjaloka/widgets/button_auth.dart';
 import 'package:blanjaloka/widgets/inputPass.dart';

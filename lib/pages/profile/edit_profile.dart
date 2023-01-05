@@ -17,6 +17,7 @@ class EditProfilePage extends StatefulWidget {
 class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
+    DateTime selectdDate = DateTime.now();
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -150,7 +151,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
                             height: 40.0,
                             child: FormEdit(
                                 hint: "masukan Tanggal Lahit Anda",
-                                onPress: (() {})),
+                                onPress: (() {
+                                  showDatePicker(
+                                      context: context,
+                                      initialDate: DateTime.now(),
+                                      firstDate: DateTime(2000),
+                                      lastDate: DateTime(2025));
+                                })),
                           ),
                         ],
                       ),

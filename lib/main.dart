@@ -31,7 +31,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const Privasi(),
-      initialRoute: RouteBlanjaloka.home,
+      initialRoute: RouteBlanjaloka.first,
       routes: {
         RouteBlanjaloka.splash: (context) => const Splash(),
         RouteBlanjaloka.first: (context) => const First(),
